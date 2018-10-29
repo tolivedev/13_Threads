@@ -13,7 +13,8 @@ namespace _13_Threads
 
             counter++;
 
-            (new Thread(RecursionOnThreads) { Name = "Thread " + counter }).Start();
+            (new Thread(RecursionOnThreads) { Name = "Thread " + counter  }).Start();
+            Thread.Sleep(2);
 
         }
     }
